@@ -59,7 +59,7 @@ resource "ocm_cluster_rosa_classic" "rosa_sts_cluster" {
 }
 
 module "operator_roles" {
-  source = "/workspace/source/terraform-provider-ocm/modules/aws_roles/operator_roles"
+  source = "/workspace/module/terraform-provider-ocm/modules/aws_roles/operator_roles"
 
   cluster_id                  = ocm_cluster_rosa_classic.rosa_sts_cluster.id
   operator_role_prefix        = local.operator_role_prefix
