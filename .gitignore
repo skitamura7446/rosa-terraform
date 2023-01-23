@@ -1,4 +1,4 @@
-terraform-provider-ocm
+/terraform-provider-ocm
 *.log
 .terraform*
 terraform.tfstate*
